@@ -185,6 +185,15 @@ textarea {
   padding: 20px;
 }
 
+.hover {
+  text-decoration: none; 
+  color: #e89a3c;
+}
+
+.hover:hover{
+  color: black;
+}
+
 section {
   text-align: center;
   padding: 20px 0;

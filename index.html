@@ -25,12 +25,11 @@
         <div class="menu">
             <ul>
                 <li><a href="#home" style="text-decoration: none; color: black;">HOME</a></li>
-                <li><a href="#join" style="text-decoration: none; color: black;">ABOUT US</a></li>
+                <li><a href="#support-container" style="text-decoration: none; color: black;">ABOUT US</a></li>
                 <li><a href="#process" style="text-decoration: none; color: black;">CAREER</a></li>
-                <li><a href="#support-container" style="text-decoration: none; color: black;">OUR SERVICES</a></li>
-                <li><a href="#footer" style="text-decoration: none; color: black;">CONTACT US</a></li>
+                <li><a href="" id="openContactPopup" style="text-decoration: none; color: black;">CONTACT US</a></li>
             </ul>
-            <div class="button">
+            <div class="button" id="openPopup">
                 <img src="./assets/orange-profile-icon-png.webp" alt="" />
                 <button>Agent Inquiry</button>
             </div>
@@ -39,6 +38,28 @@
             ☰
         </div>
     </nav>
+
+    <div class="popup-overlay" id="popup">
+        <div class="form-container">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <img src="./landing page image/successful-businessman-rocket-start-up-business-project-concept-development-process-vector-illustration-isolated-white-background-b.png" alt="">
+
+            <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                <h1>COME ABROAD!</h1>
+
+                <input type="hidden" name="access_key" value="39ea1632-94dd-4006-aded-89bf45025cc9">
+                <input type="hidden" name="_next" value="thank-you.html">
+
+                <input type="text" name="name" placeholder="FULL NAME" required style="width: 90%;">
+                <input type="email" name="email" placeholder="EMAIL" required style="width: 90%;">
+                <input type="text" name="phone" placeholder="PHONE NUMBER" required style="width: 90%;">
+
+                <textarea name="about" placeholder="TELL US ABOUT YOURSELF" required style="width: 90%;"></textarea>
+
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
 
     <header id="home">
         <div class="text-content">
@@ -54,7 +75,7 @@
             <form action="https://api.web3forms.com/submit" method="POST" id="form">
                 <h1>COME ABROAD!</h1>
                 
-                <input type="hidden" name="access_key" value="fcb8f157-59cd-4817-b043-c5ad53a0c0e9">
+                <input type="hidden" name="access_key" value="39ea1632-94dd-4006-aded-89bf45025cc9">
                 <input type="hidden" name="_next" value="thank-you.html">
                 
                 <input type="text" name="name" placeholder="FULL NAME" required>
@@ -402,24 +423,69 @@
     </footer>
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menu = document.querySelector(".menu");
-        const hamburger = document.querySelector(".hamburger");
+document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.querySelector(".menu");
+    const hamburger = document.querySelector(".hamburger");
+    const menuItems = menu.querySelectorAll("li");
+    const button = document.querySelector(".button");
 
-        function toggleMenu() {
-            menu.classList.toggle("active");
+    function toggleMenu() {
+        menu.classList.toggle("active");
+    }
+
+    function closeMenu(event) {
+        // Close menu only if clicking outside of menu and hamburger icon
+        if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+            menu.classList.remove("active");
         }
+    }
 
-        function closeMenu(event) {
-            // Close menu only if clicking outside of menu and hamburger icon
-            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-                menu.classList.remove("active");
-            }
-        }
-
-        hamburger.addEventListener("click", toggleMenu);
-        document.addEventListener("click", closeMenu);
+    // Close the menu when clicking any menu item
+    menuItems.forEach(item => {
+        item.addEventListener("click", function () {
+            menu.classList.remove("active"); // Close the menu
+        });
     });
+
+    button.addEventListener("click", function () {
+        menu.classList.remove("active");
+    })
+
+    hamburger.addEventListener("click", toggleMenu);
+    document.addEventListener("click", closeMenu);
+});
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+            const popup = document.getElementById("popup");
+            const openPopup = document.getElementById("openPopup");
+            const openContactPopup = document.getElementById("openContactPopup");
+            const closePopup = document.getElementById("closePopup");
+
+            // Open pop-up when clicking "Agent Inquiry"
+            openPopup.addEventListener("click", function () {
+                popup.style.display = "flex";
+            });
+
+            // Open pop-up when clicking "Contact Us"
+            openContactPopup.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default link behavior
+                popup.style.display = "flex";
+            });
+
+            // Close pop-up when clicking the close button
+            closePopup.addEventListener("click", function () {
+                popup.style.display = "none";
+            });
+
+            // Close pop-up when clicking outside the form
+            window.addEventListener("click", function (event) {
+                if (event.target === popup) {
+                    popup.style.display = "none";
+                }
+            });
+        });
 
 </script>
 </html>

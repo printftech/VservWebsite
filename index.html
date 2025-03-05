@@ -257,7 +257,7 @@
                 <div class="number-box">1</div>
                 <div class="timeline-content">
                     <h2 class="timeline-title">Fill the Application</h2>
-                    <p class="timeline-subtitle "><a href="#form" class="hover">Sign up online</a></p>
+                    <p class="timeline-subtitle "><a href="" class="hover" id="openFooterContactPopup1">Sign up online</a></p>
                     <div class="illustration">
                         <img src="./landing page image/rb_2147971971.png" alt="Fill Application">
                     </div>
@@ -453,6 +453,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const openPopup = document.getElementById("openPopup");
             const openContactPopup = document.getElementById("openContactPopup");
             const openFooterContactPopup = document.getElementById("openFooterContactPopup");
+            const openFooterContactPopup1 = document.getElementById("openFooterContactPopup1");
             const closePopup = document.getElementById("closePopup");
 
             // Open pop-up when clicking "Agent Inquiry"
@@ -467,6 +468,11 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             openFooterContactPopup.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default link behavior
+                popup.style.display = "flex";
+            });
+
+            openFooterContactPopup1.addEventListener("click", function (event) {
                 event.preventDefault(); // Prevent default link behavior
                 popup.style.display = "flex";
             });

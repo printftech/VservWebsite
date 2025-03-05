@@ -368,25 +368,14 @@
                     </p>
                 </div>
 
-                <!-- Company Links -->
-                <div class="footer-nav">
-                    <h3 class="footer-heading">Company</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">CAREER</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                    </ul>
-                </div>
-
                 <!-- Quick Links -->
-                <div class="footer-nav1">
+                <div class="footer-nav">
                     <h3 class="footer-heading">Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#home" style="text-decoration: none; color: white;">HOME</a></li>
-                        <li><a href="#join" style="text-decoration: none; color: white;">ABOUT US</a></li>
-                        <li><a href="#process" style="text-decoration: none; color: white;">CAREER</a></li>
-                        <li><a href="#footer" style="text-decoration: none; color: white;">CONTACT US</a></li>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#support-container">ABOUT US</a></li>
+                        <li><a href="#process">CAREER</a></li>
+                        <li><a href="#footer" id="openFooterContactPopup">CONTACT US</a></li>
                     </ul>
                 </div>
 
@@ -465,6 +454,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const popup = document.getElementById("popup");
             const openPopup = document.getElementById("openPopup");
             const openContactPopup = document.getElementById("openContactPopup");
+            const openFooterContactPopup = document.getElementById("openFooterContactPopup");
             const closePopup = document.getElementById("closePopup");
 
             // Open pop-up when clicking "Agent Inquiry"
@@ -477,6 +467,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 event.preventDefault(); // Prevent default link behavior
                 popup.style.display = "flex";
             });
+
+            openFooterContactPopup.addEventListener("click", function (event) {
+                event.preventDefault();
+                popup.style.display = "flex";
+            })
 
             // Close pop-up when clicking the close button
             closePopup.addEventListener("click", function () {

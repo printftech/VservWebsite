@@ -11,6 +11,7 @@ html {
 body {
   margin: 0px;
   padding: 0px;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
@@ -105,7 +106,7 @@ header h1 {
 .line3 {
   font-weight: bold;
   font-size: 46px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.01);
 }
 
 .tata {
@@ -780,22 +781,21 @@ section h1 {
   height: 54px;
 }
 
-
 #whatsapp-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1000;
   cursor: pointer;
-
+  padding: 10px;
 }
 
 #whatsapp-button img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  object-fit: cover;
 }
-
 
 @media screen and (max-width: 992px) {
   .menu {
@@ -1455,8 +1455,13 @@ section h1 {
 
 /* Small screens (Mobile) */
 @media (max-width: 768px) {
-  .benefits-title {
+  .line1, .line2, .line3 {
+    font-size: 14px;
+    text-align: left;
+  }
 
+
+  .benefits-title {
     font-size: 22px;
   }
 
@@ -1571,9 +1576,20 @@ section h1 {
     margin-left: 170px;
   }
 
+  #whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
   #whatsapp-button img {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .footer {

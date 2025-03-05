@@ -779,6 +779,23 @@ section h1 {
   height: 54px;
 }
 
+
+#whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  background-color: #25d366;
+}
+
+#whatsapp-button img {
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%;
+}
+
+
 @media screen and (max-width: 992px) {
   .menu {
     gap: 20px;
@@ -1534,6 +1551,11 @@ header .text-content {
 
 .popup-overlay .form-container form button {
   margin-left: 170px;
+}
+
+#whatsapp-button img {
+  width: 40px;
+  height: 40px;
 }
 
 }

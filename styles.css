@@ -786,11 +786,11 @@ section h1 {
   right: 20px;
   z-index: 1000;
   cursor: pointer;
- 
+
 }
 
 #whatsapp-button img {
-  width: 60px; 
+  width: 60px;
   height: 60px;
   border-radius: 50%;
 }
@@ -1442,9 +1442,10 @@ section h1 {
   }
 }
 
-.hover-area{
+.hover-area {
   margin-left: 10px;
 }
+
 /* Large screens (Desktops) */
 @media (max-width: 1200px) {}
 
@@ -1465,130 +1466,151 @@ section h1 {
   .benefit-description {
     padding: 0px 0px;
   }
-  .join-process{
+
+  .join-process {
     font-size: 33px;
 
   }
+
   .card {
-   
+
     margin-left: -17px;
-}
-.timeline-content {
-  padding-left: 0px;
-}
-.timeline {
-  position: relative;
-  padding-left: 14px;
-}
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50px;
-  width: 2px;
-  background-color: #e89a3c;
-}
-.form-container{
-  height: 382px;
-}
-.number-box {
-  left: 7%;
-  top: 12px;
-  width: 25px;
-  height: 25px;
-  font-size: 14px;
-}
-.timeline-item::before {
-  left: 11%;
-  top: 23px;
-  width: 30px;
-}
-.timeline-title {
-  font-size: 17px;
-  margin-left: 70px;
-}
-.timeline-subtitle {
-  font-size: 14px;
-  margin-left: 70px;
-}
-.illustration{
-  margin-left: 60px;
-}
-.role-question-container div img {
-  width: 308px;
-}
-header .text-content {
-  top: 0;
-  left: 35%;
-  text-align: left;
-}
-.form-container form h1 {
-  font-size: 24px;
-}
-.form-container img {
-  top: -33px;
-  /* right: 0px; */
-  width: 83px;
-  height: 83px;
-}
-.section-title {
-  color: #0a3157;
-  font-size: 33px;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
+  }
 
-.section-text {
-  font-size: 23px;
-  margin-bottom: 20px;
-  text-align: left;
-}
+  .timeline-content {
+    padding-left: 0px;
+  }
 
-.popup-overlay .form-container {
-  height: auto;
-}
+  .timeline {
+    position: relative;
+    padding-left: 14px;
+  }
 
-.popup-overlay .form-container form button {
-  margin-left: 170px;
-}
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    width: 2px;
+    background-color: #e89a3c;
+  }
 
-#whatsapp-button img {
-  width: 40px;
-  height: 40px;
-}
-.footer {
-  background-color: #002b47;
-  color: white;
-  height: auto;
-  padding: 3rem 2rem;
-  border-top-left-radius: 32px;
-  border-top-right-radius: 32px;
-}
-.join-conatiner {
-  max-width: 1000px;
-  margin-top: 8px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 13px;
-  border-radius: 23px;
-  background-color: rgb(244, 244, 244);
-}
-.step-container {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  padding: 17px 23px;
-}
-.support-container {
-  max-width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 28px;
-  padding: 20px;
-}
-.role-section {
-  margin: -13px 0;
-}
+  .form-container {
+    height: 382px;
+  }
+
+  .number-box {
+    left: 7%;
+    top: 12px;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .timeline-item::before {
+    left: 11%;
+    top: 23px;
+    width: 30px;
+  }
+
+  .timeline-title {
+    font-size: 17px;
+    margin-left: 70px;
+  }
+
+  .timeline-subtitle {
+    font-size: 14px;
+    margin-left: 70px;
+  }
+
+  .illustration {
+    margin-left: 60px;
+  }
+
+  .role-question-container div img {
+    width: 308px;
+  }
+
+  header .text-content {
+    top: 0;
+    left: 35%;
+    text-align: left;
+  }
+
+  .form-container form h1 {
+    font-size: 24px;
+  }
+
+  .form-container img {
+    top: -33px;
+    /* right: 0px; */
+    width: 83px;
+    height: 83px;
+  }
+
+  .section-title {
+    color: #0a3157;
+    font-size: 33px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .section-text {
+    font-size: 23px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .popup-overlay .form-container {
+    height: auto;
+  }
+
+  .popup-overlay .form-container form button {
+    margin-left: 170px;
+  }
+
+  #whatsapp-button img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer {
+    background-color: #002b47;
+    color: white;
+    height: auto;
+    padding: 3rem 2rem;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+  }
+
+  .join-conatiner {
+    max-width: 1000px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 13px;
+    border-radius: 23px;
+    background-color: rgb(244, 244, 244);
+  }
+
+  .step-container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding: 17px 23px;
+  }
+
+  .support-container {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+    padding: 20px;
+  }
+
+  .role-section {
+    margin: -13px 0;
+  }
 }

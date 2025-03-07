@@ -3,81 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Thank You Page</title>
-    <style>
-      /* Global Styles */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-      }
-
-      body {
-        background-color: #f5f7fa;
-        color: #333;
-        line-height: 1.6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-
-      .thank-you-container {
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        padding: 40px;
-        text-align: center;
-        max-width: 500px;
-        width: 90%;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 30px;
-        color: #2c3e50;
-      }
-
-      .home-button {
-        display: inline-block;
-        padding: 12px 30px;
-        background-color: #3498db;
-        color: white;
-        text-decoration: none;
-        border-radius: 50px;
-        font-weight: 600;
-        transition: all 0.3s ease;
-      }
-
-      .home-button:hover {
-        background-color: #2980b9;
-        transform: translateY(-3px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      /* Responsive Styles */
-      @media screen and (max-width: 480px) {
-        .thank-you-container {
-          padding: 25px;
-        }
-
-        h1 {
-          font-size: 2rem;
-        }
-
-        .home-button {
-          padding: 10px 25px;
-          font-size: 0.9rem;
-        }
-      }
-    </style>
+    <title>Thank You Confirmation</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <div class="thank-you-container">
-      <h1>Thank You!</h1>
-      <a href="./become-financial-consultant.html" class="home-button">Home Page</a>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./assets/images/Vserv_Logo.png" alt="vserv_Logo_08" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a
+              href="/become-financial-consultant.html"
+              style="text-decoration: none; color: black"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              href="/become-financial-consultant.html#support-container"
+              style="text-decoration: none; color: black"
+              >ABOUT US</a
+            >
+          </li>
+          <li>
+            <a
+              href="/become-financial-consultant.html#process"
+              style="text-decoration: none; color: black"
+            >
+              CAREER
+            </a>
+          </li>
+          <li>
+            <a
+              href="/become-financial-consultant.html"
+              id="openContactPopup"
+              style="text-decoration: none; color: black"
+              >CONTACT US</a
+            >
+          </li>
+        </ul>
+        <div class="button" id="openPopup">
+          <img src="./assets/images/profile_icon.webp" alt="profileIcon" />
+          <button>Agent Inquiry</button>
+        </div>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+    <div class="thank-you-card-body">
+      <div class="thank-you-card">
+        <h1 class="heading">Thank You</h1>
+        <p class="message">Our Team will contact you soon!</p>
+        <div class="checkmark-circle">
+          <div class="checkmark"></div>
+        </div>
+      </div>
     </div>
+    <footer class="footer" id="footer">
+      <hr class="footer-hr" />
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <!-- Logo -->
+            <img
+              src="./assets/images/Vserv_Logo.png"
+              alt="Vserv Logo"
+              class="footer-logo"
+            />
+            <p class="footer-about">
+              Vserv became the largest Business Associate of Tata AIG (now AIA)
+              Life across the country and remained so for the next 8 years.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-nav">
+            <h3 class="footer-heading">Links</h3>
+            <ul class="footer-links">
+              <li><a href="/become-financial-consultant.html">HOME</a></li>
+              <li><a href="/become-financial-consultant.html#support-container">ABOUT US</a></li>
+              <li><a href="/become-financial-consultant.html#process">CAREER</a></li>
+              <li><a href="/become-financial-consultant.html" id="openFooterContactPopup">CONTACT US</a></li>
+            </ul>
+          </div>
+
+          <!-- Address Section -->
+          <div class="footer-address">
+            <h3 class="footer-heading" id="address">Company Address</h3>
+            <p class="address-text">
+              Unit No. 305, Third Floor, Times Center, Golf Course Road
+              Sector-54, Gurugram-122003
+            </p>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+              <a
+                href="https://www.instagram.com/vservcapitalofficial/"
+                class="social-icon"
+                target="_blank"
+              >
+                <img src="./assets/images/instagram.png" alt="Instagram" />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61565640393931"
+                class="social-icon"
+                target="_blank"
+              >
+                <img src="./assets/images/facebook.png" alt="Facebook" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/vserv-capital-services"
+                class="social-icon"
+                target="_blank"
+              >
+                <img src="./assets/images/linkedin.png" alt="LinkedIn" />
+              </a>
+              <a
+                href="https://x.com/VservG"
+                class="social-icon"
+                target="_blank"
+              >
+                <img src="./assets/images/X.png" alt="X" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr style="margin-top: 43px" />
+      </div>
+    </footer>
   </body>
 </html>

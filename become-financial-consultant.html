@@ -2,40 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KKHS354P');</script>
-    <!-- End Google Tag Manager -->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="icon" type="image/png" href="./assets/images/Vserv_Logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <style>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KKHS354P');
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16941755401"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16941755401');
+    </script>
+
+    <!-- Event snippet for LP Form Sign up conversion page -->
+    <script>
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16941755401/TGNzCPr9kq0aEInYuo4_',
+            'value': 10.0,
+            'currency': 'INR'
+        });
+    </script>
+
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link href="./assets/images/Vserv_Logo.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
+        rel="stylesheet" />
+    <style type="text/css">
         body {
             font-family: "Inter", sans-serif;
         }
     </style>
     <title>VSERV</title>
     <!-- Event snippet for Landing Page LF conversion page -->
-<script>
-    gtag('event', 'conversion', {'send_to': 'AW-11317017725/UzO9CO29kqcaEP34r5Qq'});
-  </script>
+    <script>
+        gtag('event', 'conversion', { 'send_to': 'AW-11317017725/UzO9CO29kqcaEP34r5Qq' });
+    </script>
 </head>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKHS354P"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKHS354P" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+     
     <nav class="navbar">
-        <div class="logo">
-            <img src="./assets/images/Vserv_Logo.png" alt="vserv_Logo_08" />
-        </div>
+        <div class="logo"><img alt="vserv_Logo_08" src="./assets/images/Vserv_Logo.png" /></div>
+
         <div class="menu">
             <ul>
                 <li><a href="#home" style="text-decoration: none; color: black;">HOME</a></li>
@@ -43,32 +74,26 @@
                 <li><a href="#process" style="text-decoration: none; color: black;">CAREER</a></li>
                 <li><a href="" id="openContactPopup" style="text-decoration: none; color: black;">CONTACT US</a></li>
             </ul>
-            <div class="button" id="openPopup">
-                <img src="./assets/images/profile_icon.webp" alt="profileIcon" />
-                <button>Agent Inquiry</button>
-            </div>
+
+            <div class="button" id="openPopup"><img alt="profileIcon"
+                    src="./assets/images/profile_icon.webp" /><button>Agent Inquiry</button></div>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">
-            ☰
-        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
     </nav>
 
     <div class="popup-overlay" id="popup">
-        <div class="form-container">
-            <span class="close-btn" id="closePopup">&times;</span>
+        <div class="form-container"><span class="close-btn" id="closePopup">&times;</span>
 
             <form action="https://api.web3forms.com/submit" method="POST">
                 <h1>COME ABROAD!</h1>
-
-                <input type="hidden" name="access_key" value="fcb8f157-59cd-4817-b043-c5ad53a0c0e9">
-                <input type="hidden" name="redirect" value="https://vservgroup.com/thank-you.html">
-                <input type="text" name="name" placeholder="FULL NAME" required style="width: 90%;">
-                <input type="email" name="email" placeholder="EMAIL" required style="width: 90%;">
-                <input type="text" name="phone" placeholder="PHONE NUMBER" required style="width: 90%;">
-
-                <textarea name="about" placeholder="TELL US ABOUT YOURSELF" required style="width: 90%;"></textarea>
-
-                <button type="submit" class="popup-button">Submit</button>
+                <input name="access_key" type="hidden" value="fcb8f157-59cd-4817-b043-c5ad53a0c0e9" /> <input
+                    name="redirect" type="hidden" value="https://vservgroup.com/thank-you.html" /> <input name="name"
+                    placeholder="FULL NAME" required="" style="width: 90%;" type="text" /> <input name="email"
+                    placeholder="EMAIL" required="" style="width: 90%;" type="email" /> <input name="phone"
+                    placeholder="PHONE NUMBER" required="" style="width: 90%;" type="text" /><textarea name="about"
+                    placeholder="TELL US ABOUT YOURSELF" required="" style="width: 90%;"></textarea><button
+                    class="popup-button" type="submit">Submit</button>
             </form>
         </div>
     </div>
@@ -76,26 +101,23 @@
     <header id="home">
         <div class="text-content">
             <h1 class="line1">UNLOCK YOUR FUTURE WITH</h1>
-            <h1 class="line2"><span class="tata">TATA </span><span class="aia">AIA: </span> WHERE CAREERS</h2>
-                <h1 class="line3">TAKE FLIGHT</h3>
+
+            <h1 class="line2"><span class="tata">TATA </span><span class="aia">AIA: </span> WHERE CAREERS</h1>
+
+            <h1 class="line3">TAKE FLIGHT</h1>
         </div>
-        <div>
-            <img src="./assets/images/headerImage.png" alt="headerImg">
-        </div>
-        <div class="form-container">
-            <img src="./assets/images/formRocket.png" alt="">
-            <form action="https://api.web3forms.com/submit" method="POST" id="form">
+
+        <div><img alt="headerImg" src="./assets/images/headerImage.png" /></div>
+
+        <div class="form-container"><img alt="" src="./assets/images/formRocket.png" />
+            <form action="https://api.web3forms.com/submit" id="form" method="POST">
                 <h1>COME ABROAD!</h1>
-                
-                <input type="hidden" name="access_key" value="fcb8f157-59cd-4817-b043-c5ad53a0c0e9">
-                <input type="hidden" name="redirect" value="https://vservgroup.com/thank-you.html">
-                <input type="text" name="name" placeholder="FULL NAME" required>
-                <input type="email" name="email" placeholder="EMAIL" required>
-                <input type="text" name="phone" placeholder="PHONE NUMBER" required>
-                
-                <textarea name="about" placeholder="TELL US ABOUT YOURSELF" required></textarea>
-                
-                <button type="submit">Submit</button>
+                <input name="access_key" type="hidden" value="fcb8f157-59cd-4817-b043-c5ad53a0c0e9" /> <input
+                    name="redirect" type="hidden" value="https://vservgroup.com/thank-you.html" /> <input name="name"
+                    placeholder="FULL NAME" required="" type="text" /> <input name="email" placeholder="EMAIL"
+                    required="" type="email" /> <input name="phone" placeholder="PHONE NUMBER" required=""
+                    type="text" /><textarea name="about" placeholder="TELL US ABOUT YOURSELF"
+                    required=""></textarea><button type="submit">Submit</button>
             </form>
         </div>
     </header>
@@ -108,153 +130,130 @@
 
         <div class="benefits-grid">
             <div class="benefit-card">
-                <div class="icon-container">
-                    <img src="./assets/images/financialFreedomLogo.png" alt="financial freedom">
-                </div>
+                <div class="icon-container"><img alt="financial freedom"
+                        src="./assets/images/financialFreedomLogo.png" /></div>
+
                 <h2 class="benefit-title">Financial Freedom</h2>
-                <p class="benefit-description">
-                    Are You Tired Of Worrying About Your Financial Needs?
-                    Do You Feel That Your Job Offers Limited Opportunities,
-                    Leaving You Living Paycheck To Paycheck? Whether You're
-                    Beginning Family Responsibilities, Or Looking To Become Active
-                    And Engaged In Retirement, Joining Tata AIA Provides A
-                    Rewarding Career Path. Enjoy The Potential For Financial
-                    Freedom Through Competitive Commissions, Incentives, And
-                    Robust Growth Opportunities.
-                </p>
-                <hr class="white-line">
+
+                <p class="benefit-description">Are You Tired Of Worrying About Your Financial Needs? Do You Feel That
+                    Your Job Offers Limited Opportunities, Leaving You Living Paycheck To Paycheck? Whether You&#39;re
+                    Beginning Family Responsibilities, Or Looking To Become Active And Engaged In Retirement, Joining
+                    Tata AIA Provides A Rewarding Career Path. Enjoy The Potential For Financial Freedom Through
+                    Competitive Commissions, Incentives, And Robust Growth Opportunities.</p>
+
+                <hr class="white-line" />
             </div>
 
             <div class="benefit-card">
-                <div class="icon-container">
-                    <img src="./assets/images/flexiableHoursLogo.png" alt="Flexible Work Hours">
-                </div>
+                <div class="icon-container"><img alt="Flexible Work Hours"
+                        src="./assets/images/flexiableHoursLogo.png" /></div>
+
                 <h2 class="benefit-title">Flexible Work Hours</h2>
-                <p class="benefit-description">
-                    If A Fixed Routine Stifles Your Creativity, You'll
-                    Appreciate The Freedom To Establish Your Own
-                    Working Days And Hours. At Tata AIA, You Can
-                    Maintain And Even Increase Your Income While
-                    Enjoying A Schedule That Suits Your Lifestyle And
-                    Priorities.
-                </p>
-                <hr class="white-line">
+
+                <p class="benefit-description">If A Fixed Routine Stifles Your Creativity, You&#39;ll Appreciate The
+                    Freedom To Establish Your Own Working Days And Hours. At Tata AIA, You Can Maintain And Even
+                    Increase Your Income While Enjoying A Schedule That Suits Your Lifestyle And Priorities.</p>
+
+                <hr class="white-line" />
             </div>
 
             <div class="benefit-card">
-                <div class="icon-container">
-                    <img src="./assets/images/innovativeTechnologyLogo.png" alt="Innovative Technology">
-                </div>
+                <div class="icon-container"><img alt="Innovative Technology"
+                        src="./assets/images/innovativeTechnologyLogo.png" /></div>
+
                 <h2 class="benefit-title">Innovative Technology</h2>
-                <p class="benefit-description">
-                    Does Technology Seem Threatening To Your Job
-                    Prospects? At Tata AIA Life, We Embrace Digital
-                    Transformation, So Advanced Tools Enhance Client
-                    Interactions, Streamline Processes, And Ultimately
-                    Drive Your Income Growth—Turning Potential
-                    Disruption Into Opportunity.
-                </p>
-                <hr class="white-line">
+
+                <p class="benefit-description">Does Technology Seem Threatening To Your Job Prospects? At Tata AIA Life,
+                    We Embrace Digital Transformation, So Advanced Tools Enhance Client Interactions, Streamline
+                    Processes, And Ultimately Drive Your Income Growth&mdash;Turning Potential Disruption Into
+                    Opportunity.</p>
+
+                <hr class="white-line" />
             </div>
 
             <div class="benefit-card">
-                <div class="icon-container">
-                    <img src="./assets/images/trainingSupportLogo.png" alt="training support">
+                <div class="icon-container"><img alt="training support" src="./assets/images/trainingSupportLogo.png" />
                 </div>
+
                 <h2 class="benefit-title">Training Support</h2>
-                <p class="benefit-description">
-                    Worried About Stepping Into A New Role Due To Fear
-                    Of Failure? You're Not Alone. Many Of Our Successful
-                    Advisors Once Shared The Same Concern. At Tata
-                    AIA Life, We Provide Thorough Training And Ongoing
-                    Support, Equipping You With The Skills And
-                    Knowledge You Need To Succeed.
-                </p>
-                <hr class="white-line">
+
+                <p class="benefit-description">Worried About Stepping Into A New Role Due To Fear Of Failure? You&#39;re
+                    Not Alone. Many Of Our Successful Advisors Once Shared The Same Concern. At Tata AIA Life, We
+                    Provide Thorough Training And Ongoing Support, Equipping You With The Skills And Knowledge You Need
+                    To Succeed.</p>
+
+                <hr class="white-line" />
             </div>
 
             <div class="benefit-card">
-                <div class="icon-container">
-                    <img src="./assets/images/rewardsLogo.png" alt="Rewards">
-                </div>
-                <h2 class="benefit-title">Rewards & Recognition</h2>
-                <p class="benefit-description">
-                    Everyone Appreciates Recognition For Their Hard
-                    Work! At Tata AIA Life, We Celebrate Your
-                    Achievements Through Awards, Incentives, And
-                    Exciting Excursions—Both Nationally And
-                    Internationally. Your Success Deserves To Be
-                    Acknowledged!
-                </p>
-                <hr class="white-line">
+                <div class="icon-container"><img alt="Rewards" src="./assets/images/rewardsLogo.png" /></div>
+
+                <h2 class="benefit-title">Rewards &amp; Recognition</h2>
+
+                <p class="benefit-description">Everyone Appreciates Recognition For Their Hard Work! At Tata AIA Life,
+                    We Celebrate Your Achievements Through Awards, Incentives, And Exciting Excursions&mdash;Both
+                    Nationally And Internationally. Your Success Deserves To Be Acknowledged!</p>
+
+                <hr class="white-line" />
             </div>
 
             <div class="benefit-card last">
-                <div class="icon-container">
-                    <img src="./assets/images/guidanceLogo.png" alt="professional guidance">
+                <div class="icon-container"><img alt="professional guidance" src="./assets/images/guidanceLogo.png" />
                 </div>
+
                 <h2 class="benefit-title">Professional Guidance</h2>
-                <p class="benefit-description">
-                    Curious About How Successful Individuals Achieved
-                    Their Goals? Our Structured Mentoring Program
-                    Connects You With Seasoned Leaders Who Provide
-                    Invaluable Insights. Benefit From Continuous Guidance
-                    That Positions You On A Fast Track To Success.
-                </p>
+
+                <p class="benefit-description">Curious About How Successful Individuals Achieved Their Goals? Our
+                    Structured Mentoring Program Connects You With Seasoned Leaders Who Provide Invaluable Insights.
+                    Benefit From Continuous Guidance That Positions You On A Fast Track To Success.</p>
             </div>
         </div>
     </div>
 
     <div class="join-conatiner" id="join">
         <h1 class="join-process">Who Can Join</h1>
-        
         <!-- First Row - 2 cards -->
-        <div class="grid-container">
-            <!-- Professionals Card -->
+
+        <div class="grid-container"><!-- Professionals Card -->
             <div class="card">
-                <div class="card-image">
-                    <img src="./assets/images/professionalsLogo.png" alt="Professionals">
-                </div>
+                <div class="card-image"><img alt="Professionals" src="./assets/images/professionalsLogo.png" /></div>
+
                 <h2 class="card-title">Professionals</h2>
             </div>
-            
             <!-- Financial Distributors Card -->
+
             <div class="card">
-                <div class="card-image">
-                    <img src="./assets/images/financialDistributorsLogo.png" alt="Financial Distributors">
-                </div>
+                <div class="card-image"><img alt="Financial Distributors"
+                        src="./assets/images/financialDistributorsLogo.png" /></div>
+
                 <h2 class="card-title">Financial Distributors</h2>
             </div>
         </div>
-        
         <!-- Second Row - 1 centered card -->
+
         <div class="grid-container">
-            <div class="single-column">
-                <!-- Salaried/Self Employed Card -->
+            <div class="single-column"><!-- Salaried/Self Employed Card -->
                 <div class="card">
-                    <div class="card-image">
-                        <img src="./assets/images/salariedSelfEmployedLogo.png" alt="Salaried/Self Employed">
-                    </div>
+                    <div class="card-image"><img alt="Salaried/Self Employed"
+                            src="./assets/images/salariedSelfEmployedLogo.png" /></div>
+
                     <h2 class="card-title">Salaried / Self Employed</h2>
                 </div>
             </div>
         </div>
-        
         <!-- Third Row - 2 cards -->
-        <div class="grid-container">
-            <!-- Housewives Card -->
+
+        <div class="grid-container"><!-- Housewives Card -->
             <div class="card">
-                <div class="card-image">
-                    <img src="./assets/images/houseWivesLogo.png" alt="Housewives">
-                </div>
+                <div class="card-image"><img alt="Housewives" src="./assets/images/houseWivesLogo.png" /></div>
+
                 <h2 class="card-title">Housewives</h2>
             </div>
-            
             <!-- Retired Card -->
+
             <div class="card">
-                <div class="card-image">
-                    <img src="./assets/images/retiredLogo.png" alt="Retired">
-                </div>
+                <div class="card-image"><img alt="Retired" src="./assets/images/retiredLogo.png" /></div>
+
                 <h2 class="card-title">Retired</h2>
             </div>
         </div>
@@ -262,53 +261,61 @@
 
     <div class="step-container" id="process">
         <h1 class="join-process">Joining Process</h1>
-        
-        <div class="timeline">
-            <!-- Step 1 -->
+
+        <div class="timeline"><!-- Step 1 -->
             <div class="timeline-item">
                 <div class="number-box">1</div>
+
                 <div class="timeline-content">
                     <h2 class="timeline-title">Fill the Application</h2>
-                    <p class="timeline-subtitle "><a href="" class="hover" id="openFooterContactPopup1">Sign up online</a></p>
-                    <div class="illustration">
-                        <img src="./assets/images/fillApplicationLogo.png" alt="Fill Application">
-                    </div>
+
+                    <p class="timeline-subtitle "><a class="hover" href="" id="openFooterContactPopup1">Sign up
+                            online</a></p>
+
+                    <div class="illustration"><img alt="Fill Application"
+                            src="./assets/images/fillApplicationLogo.png" /></div>
                 </div>
             </div>
-            
             <!-- Step 2 -->
+
             <div class="timeline-item">
                 <div class="number-box">2</div>
+
                 <div class="timeline-content">
                     <h2 class="timeline-title">Submit Documents</h2>
+
                     <p class="timeline-subtitle">For registration and verification</p>
-                    <div class="illustration">
-                        <img src="./assets/images/submitDocumentsLogo.png" alt="Submit Documents">
-                    </div>
+
+                    <div class="illustration"><img alt="Submit Documents"
+                            src="./assets/images/submitDocumentsLogo.png" /></div>
                 </div>
             </div>
-            
             <!-- Step 3 -->
+
             <div class="timeline-item">
                 <div class="number-box">3</div>
+
                 <div class="timeline-content">
                     <h2 class="timeline-title">Training and Certification</h2>
+
                     <p class="timeline-subtitle">Undergo a IRDAI Mandatory training program followed by an exam</p>
-                    <div class="illustration">
-                        <img src="./assets/images/trainingLogo.png" alt="Training and Certification">
-                    </div>
+
+                    <div class="illustration"><img alt="Training and Certification"
+                            src="./assets/images/trainingLogo.png" /></div>
                 </div>
             </div>
-            
             <!-- Step 4 -->
+
             <div class="timeline-item">
                 <div class="number-box">4</div>
+
                 <div class="timeline-content">
                     <h2 class="timeline-title">Appointment</h2>
-                    <p class="timeline-subtitle" id="appointment">You will now receive an Appointment Letter from TATA aia and will be authorised to sell TATA AIA Insurance policies</p>
-                    <div class="illustration">
-                        <img src="./assets/images/appointmentLogo.png" alt="Appointment">
-                    </div>
+
+                    <p class="timeline-subtitle" id="appointment">You will now receive an Appointment Letter from TATA
+                        aia and will be authorised to sell TATA AIA Insurance policies</p>
+
+                    <div class="illustration"><img alt="Appointment" src="./assets/images/appointmentLogo.png" /></div>
                 </div>
             </div>
         </div>
@@ -317,72 +324,71 @@
     <div class="support-container" id="support-container">
         <section class="support-section">
             <div class="image-container">
-                <div class="blue-box"></div> 
-                <img src="./assets/images/handshakeLogo.jpg" alt="Handshake between business professionals">
+                <div class="blue-box"></div>
+                <img alt="Handshake between business professionals" src="./assets/images/handshakeLogo.jpg" />
             </div>
+
             <div class="content-container">
                 <h1 class="section-title">How Vserv Supports You!</h1>
-                <p class="section-text">
-                    At Vserv Capital Services, we offer unparalleled support through expert financial guidance, tailored
-                    strategies, and comprehensive training. Our goal is to help you strengthen client relationships,
-                    optimize portfolio management, and drive business growth. With Vserv by your side, you're empowered
-                    to deliver exceptional value and attain long-term career success.
-                </p>
+
+                <p class="section-text">At Vserv Capital Services, we offer unparalleled support through expert
+                    financial guidance, tailored strategies, and comprehensive training. Our goal is to help you
+                    strengthen client relationships, optimize portfolio management, and drive business growth. With
+                    Vserv by your side, you&#39;re empowered to deliver exceptional value and attain long-term career
+                    success.</p>
             </div>
         </section>
 
         <section class="role-section">
             <div class="role-question-container">
                 <h2 class="role-question">What role does <span class="highlight">Vserv Capital Services</span> play for
-                    you
-                    to excel as an insurance professional? <br /><span class="subtitle">Vserv Capital Services – Managing Partner, Business Associate, Tata AIA Life</span></h2>
-                    <div class="image-wrapper">
-                        <div class="blue-box1"></div>
-                        <img src="./assets/images/laptopLogo.jpg" alt="laptopLogo">
-                    </div>
+                    you to excel as an insurance professional?<br />
+                    <span class="subtitle">Vserv Capital Services &ndash; Managing Partner, Business Associate, Tata AIA
+                        Life</span>
+                </h2>
+
+                <div class="image-wrapper">
+                    <div class="blue-box1"></div>
+                    <img alt="laptopLogo" src="./assets/images/laptopLogo.jpg" />
                 </div>
-            <p class="section-text">
-                A great mentor and coach can make all the difference in achieving your goals. Vserv Capital Services
-                offers the ideal environment for those seeking expert guidance, mentorship, and unwavering support to
-                become a leading life insurance professional.
-            </p>
+            </div>
+
+            <p class="section-text">A great mentor and coach can make all the difference in achieving your goals. Vserv
+                Capital Services offers the ideal environment for those seeking expert guidance, mentorship, and
+                unwavering support to become a leading life insurance professional.</p>
 
             <div class="founder-section">
-                <p class="section-text">
-                    Founded by Mr. Harpreet Singh in 2001, Vserv Capital Services has been proudly associated with Tata
-                    AIA Life since its inception. As the first leader of Tata AIA Life, Mr. Singh has built a strong
-                    legacy of leadership. Vserv boasts a team of 2,000 professionals and has successfully sold over
-                    1,00,000 policies to more than 50,000 clients across India and among NRIs.
+                <p class="section-text">Founded by Mr. Harpreet Singh in 2001, Vserv Capital Services has been proudly
+                    associated with Tata AIA Life since its inception. As the first leader of Tata AIA Life, Mr. Singh
+                    has built a strong legacy of leadership. Vserv boasts a team of 2,000 professionals and has
+                    successfully sold over 1,00,000 policies to more than 50,000 clients across India and among NRIs.
                 </p>
             </div>
 
-            <p class="section-text">
-                We take pride in not just being pioneers, but also in being one of the top leaders of Tata AIA Life in
-                India. At Vserv, we are committed to guiding and empowering our team members to achieve their highest
-                potential, transforming their lives and the lives of their families in ways they never imagined.
-            </p>
+            <p class="section-text">We take pride in not just being pioneers, but also in being one of the top leaders
+                of Tata AIA Life in India. At Vserv, we are committed to guiding and empowering our team members to
+                achieve their highest potential, transforming their lives and the lives of their families in ways they
+                never imagined.</p>
 
-            <p class="section-text invitation">
-                We invite ambitious and dedicated individuals to join us and contribute to the ongoing economic
-                transformation in the country.
-            </p>
+            <p class="section-text invitation">We invite ambitious and dedicated individuals to join us and contribute
+                to the ongoing economic transformation in the country.</p>
         </section>
     </div>
+
     <footer class="footer" id="footer">
         <hr class="footer-hr" />
         <div class="footer-container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <!-- Logo -->
-                    <img src="./assets/images/Vserv_Logo.png" alt="Vserv Logo" class="footer-logo">
-                    <p class="footer-about">
-                        Vserv became the largest Business Associate of Tata AIG (now AIA) Life across the country and remained so for the next 8 years.
-                    </p>
+                <div class="footer-brand"><!-- Logo --><img alt="Vserv Logo" class="footer-logo"
+                        src="./assets/images/Vserv_Logo.png" />
+                    <p class="footer-about">Vserv became the largest Business Associate of Tata AIG (now AIA) Life
+                        across the country and remained so for the next 8 years.</p>
                 </div>
-
                 <!-- Quick Links -->
+
                 <div class="footer-nav">
                     <h3 class="footer-heading">Links</h3>
+
                     <ul class="footer-links">
                         <li><a href="#home">HOME</a></li>
                         <li><a href="#support-container">ABOUT US</a></li>
@@ -390,117 +396,108 @@
                         <li><a href="" id="openFooterContactPopup">CONTACT US</a></li>
                     </ul>
                 </div>
-
                 <!-- Address Section -->
+
                 <div class="footer-address">
                     <h3 class="footer-heading" id="address">Company Address</h3>
-                    <p class="address-text">
-                        Unit No. 305, Third Floor, Times Center, Golf Course Road Sector-54, Gurugram-122003
-                    </p>
-                    
+
+                    <p class="address-text">Unit No. 305, Third Floor, Times Center, Golf Course Road Sector-54,
+                        Gurugram-122003</p>
                     <!-- Social Media Icons -->
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/vservcapitalofficial/" class="social-icon" target="_blank">
-                            <img src="./assets/images/instagram.png" alt="Instagram">
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=61565640393931" class="social-icon" target="_blank">
-                            <img src="./assets/images/facebook.png" alt="Facebook">
-                        </a>
-                        <a href="https://www.linkedin.com/company/vserv-capital-services" class="social-icon" target="_blank">
-                            <img src="./assets/images/linkedin.png" alt="LinkedIn">
-                        </a>
-                        <a href="https://x.com/VservG" class="social-icon" target="_blank">
-                            <img src="./assets/images/X.png" alt="X">
-                        </a>
-                    </div>
+
+                    <div class="social-icons"><a class="social-icon"
+                            href="https://www.instagram.com/vservcapitalofficial/" target="_blank"><img alt="Instagram"
+                                src="./assets/images/instagram.png" /> </a> <a class="social-icon"
+                            href="https://www.facebook.com/profile.php?id=61565640393931" target="_blank"> <img
+                                alt="Facebook" src="./assets/images/facebook.png" /> </a> <a class="social-icon"
+                            href="https://www.linkedin.com/company/vserv-capital-services" target="_blank"> <img
+                                alt="LinkedIn" src="./assets/images/linkedin.png" /> </a> <a class="social-icon"
+                            href="https://x.com/VservG" target="_blank"> <img alt="X" src="./assets/images/X.png" />
+                        </a></div>
                 </div>
             </div>
-            
+
             <hr style="margin-top: 43px;" />
         </div>
     </footer>
 
-    <a href="https://wa.me/9811229281" target="_blank" id="whatsapp-button">
-        <img src="./assets/images/whatsapp.png" alt="WhatsApp" />
-    </a>
-    
+    <p><a href="https://wa.me/9811229281" id="whatsapp-button" target="_blank"><img alt="WhatsApp"
+                src="./assets/images/whatsapp.png" /> </a></p>
 </body>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const menu = document.querySelector(".menu");
-    const hamburger = document.querySelector(".hamburger");
-    const menuItems = menu.querySelectorAll("li");
-    const button = document.querySelector(".button");
+    document.addEventListener("DOMContentLoaded", function () {
+        const menu = document.querySelector(".menu");
+        const hamburger = document.querySelector(".hamburger");
+        const menuItems = menu.querySelectorAll("li");
+        const button = document.querySelector(".button");
 
-    function toggleMenu() {
-        menu.classList.toggle("active");
-    }
-
-    function closeMenu(event) {
-        // Close menu only if clicking outside of menu and hamburger icon
-        if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-            menu.classList.remove("active");
+        function toggleMenu() {
+            menu.classList.toggle("active");
         }
-    }
 
-    // Close the menu when clicking any menu item
-    menuItems.forEach(item => {
-        item.addEventListener("click", function () {
-            menu.classList.remove("active"); // Close the menu
+        function closeMenu(event) {
+            // Close menu only if clicking outside of menu and hamburger icon
+            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+                menu.classList.remove("active");
+            }
+        }
+
+        // Close the menu when clicking any menu item
+        menuItems.forEach(item => {
+            item.addEventListener("click", function () {
+                menu.classList.remove("active"); // Close the menu
+            });
         });
+
+        button.addEventListener("click", function () {
+            menu.classList.remove("active");
+        })
+
+        hamburger.addEventListener("click", toggleMenu);
+        document.addEventListener("click", closeMenu);
     });
 
-    button.addEventListener("click", function () {
-        menu.classList.remove("active");
-    })
-
-    hamburger.addEventListener("click", toggleMenu);
-    document.addEventListener("click", closeMenu);
-});
-
-
-
     document.addEventListener("DOMContentLoaded", function () {
-            const popup = document.getElementById("popup");
-            const openPopup = document.getElementById("openPopup");
-            const openContactPopup = document.getElementById("openContactPopup");
-            const openFooterContactPopup = document.getElementById("openFooterContactPopup");
-            const openFooterContactPopup1 = document.getElementById("openFooterContactPopup1");
-            const closePopup = document.getElementById("closePopup");
+        const popup = document.getElementById("popup");
+        const openPopup = document.getElementById("openPopup");
+        const openContactPopup = document.getElementById("openContactPopup");
+        const openFooterContactPopup = document.getElementById("openFooterContactPopup");
+        const openFooterContactPopup1 = document.getElementById("openFooterContactPopup1");
+        const closePopup = document.getElementById("closePopup");
 
-            // Open pop-up when clicking "Agent Inquiry"
-            openPopup.addEventListener("click", function () {
-                popup.style.display = "flex";
-            });
-
-            // Open pop-up when clicking "Contact Us"
-            openContactPopup.addEventListener("click", function (event) {
-                event.preventDefault(); // Prevent default link behavior
-                popup.style.display = "flex";
-            });
-
-            openFooterContactPopup.addEventListener("click", function (event) {
-                event.preventDefault(); // Prevent default link behavior
-                popup.style.display = "flex";
-            });
-
-            openFooterContactPopup1.addEventListener("click", function (event) {
-                event.preventDefault(); // Prevent default link behavior
-                popup.style.display = "flex";
-            });
-
-            // Close pop-up when clicking the close button
-            closePopup.addEventListener("click", function () {
-                popup.style.display = "none";
-            });
-
-            // Close pop-up when clicking outside the form
-            window.addEventListener("click", function (event) {
-                if (event.target === popup) {
-                    popup.style.display = "none";
-                }
-            });
+        // Open pop-up when clicking "Agent Inquiry"
+        openPopup.addEventListener("click", function () {
+            popup.style.display = "flex";
         });
 
+        // Open pop-up when clicking "Contact Us"
+        openContactPopup.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            popup.style.display = "flex";
+        });
+
+        openFooterContactPopup.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            popup.style.display = "flex";
+        });
+
+        openFooterContactPopup1.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            popup.style.display = "flex";
+        });
+
+        // Close pop-up when clicking the close button
+        closePopup.addEventListener("click", function () {
+            popup.style.display = "none";
+        });
+
+        // Close pop-up when clicking outside the form
+        window.addEventListener("click", function (event) {
+            if (event.target === popup) {
+                popup.style.display = "none";
+            }
+        });
+    });
 </script>
+
 </html>
